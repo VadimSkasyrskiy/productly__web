@@ -1,0 +1,17 @@
+// fonts
+$font_main: 'Poppins'
+$fs_main: 16px
+
+// Colors
+$color_main: rgba(84, 72, 55, 1)
+$color_btn: rgba(255, 255, 255,1)
+$color_title: rgba(47, 40, 30, 1)
+$color_orange: rgba(255, 153, 0, 1)
+
+
+// Mixins
+
+@function rem_size($size) 
+  $remSize: $size / $fs_main
+  @return #{$remSize}rem
+
