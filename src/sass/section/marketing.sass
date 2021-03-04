@@ -1,0 +1,75 @@
+.marketing
+    margin-bottom: 120px
+
+    &__title
+        margin-bottom: 10px
+
+    &__descr
+        margin-bottom: 55px
+    
+    &__slider
+        display: flex
+        justify-content: space-between
+        padding-bottom: 80px
+
+        &-title
+            position: relative
+            z-index: 9999
+            font-size: rem_size(24px)
+            font-weight: 700
+            line-height: rem_size(34px)
+            color: $color_title
+            max-width: 294px
+            display: inline-block
+            transition: color .15s
+
+            &:hover
+                color: $color_orange
+        
+        &-item
+            display: block
+            max-width: 348px
+            margin-right: 40px
+            position: relative
+            box-shadow: 5px 5px 30px rgba(188, 208, 229, .35)
+            transition: all .3s
+            padding-bottom: 15px
+            margin-bottom: 10px
+
+            &:focus 
+                outline: 2px solid #BCD0E5
+            
+            &:hover
+                box-shadow: 5px 5px 30px rgba(188, 208, 229, .45)
+        
+        &-img
+            transition: all .25s
+            transform: scale(1)
+
+        &-link 
+            overflow: hidden
+            display: inline-block
+            border-radius: 12px 12px 0 0
+
+            &:hover .marketing__slider-img
+                transform: scale(1.2)
+            
+            &:hover .marketing__slider-title
+                color: $color_orange
+                background: #000
+            
+            &:focus 
+                outline: none
+        
+    &__info
+        display: inline-block
+        margin: 25px 0 12px 0
+
+        &-link
+            position: relative
+            z-index: 9999
+            font-weight: 700
+            border-bottom: 2px solid transparent
+
+            &:hover
+                border-bottom: 2px solid #BCD0E5

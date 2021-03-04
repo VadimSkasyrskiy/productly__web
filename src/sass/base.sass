@@ -4,9 +4,31 @@ html
     line-height: rem_size(26px)
     color: $color_main
 
+ul, li 
+    margin: 0
+    padding: 0
+    list-style: none
+
+a
+    text-decoration: none
+    color: $color_main
+
+    &:focus
+        outline: 2px solid #BCD0E5
+
+h1, h2, h3, h4, h5, h6, p
+    margin: 0
+
+button
+    border: none
+    cursor: pointer
+
+    &:focus
+        outline: 2px solid #BCD0E5
+
 .main-title, .section-title
-    
     color: $color_title
+    font-weight: 700
 
 .main-title
     font-size: rem_size(44px)
@@ -16,3 +38,90 @@ html
 .section-title
     font-size: rem_size(36px)
     line-height: rem_size(54px)
+
+.btn
+    background: $color_orange
+    color: $color_btn
+    border: 1px solid transparent
+    border-radius: 4px
+    font-size: rem_size(16px)
+    line-height: rem_size(24px)
+    font-weight: 600
+    padding: 15px 40px
+    transition: background .25s
+    &:hover
+        background: darken($color_orange, 8%)
+
+    &--white
+        background: $color_btn
+        color: rgba(23, 58, 86, 1)
+        border: 1px solid #BCD0E5
+
+        &:hover
+            background: darken($color_btn, 8%)
+    
+    &:focus
+        outline: 2px solid #BCD0E5
+
+.menu
+    &__list
+        display: flex
+
+    &__item
+        margin-right: 25px
+    
+    &__link
+        font-size: rem_size(14px)
+        line-height: rem_size(28px)
+        border-bottom: 2px solid transparent
+
+        &:hover
+            border-bottom: 2px solid #BCD0E5
+
+.video-link
+    color: $color_orange
+    font-weight: 600
+    line-height: rem_size(24px)
+    text-decoration: underline
+    padding-left: 26px
+    position: relative
+
+    &:before
+        content: ""
+        display: block
+        position: absolute
+        left: 0
+        top: 50%
+        width: 0
+        height: 0
+        border-top: 10px solid transparent
+        border-left: 17px solid $color_orange
+        border-bottom: 10px solid transparent
+        transform: translateY(-50%)
+        
+.slick-active
+  .marketing__slider-title
+        color: $color_orange
+
+.slick-dots li button
+    width: 16px
+    height: 16px
+    background: rgba(239, 239, 239, 1)
+    border-radius: 50%
+    &:before
+        font-size: 0
+
+.slick-dots li.slick-active button
+    background: $color_orange
+
+.slick-dots
+    bottom: 0
+
+.slick-dotted.slick-slider
+    margin-bottom: 0
+
+.slick-track
+    padding: 1px
+
+.video-link:hover
+    text-decoration: none
