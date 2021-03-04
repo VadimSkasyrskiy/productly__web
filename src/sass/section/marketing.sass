@@ -27,20 +27,18 @@
                 color: $color_orange
         
         &-item
-            display: block
-            max-width: 348px
-            margin-right: 40px
             position: relative
-            box-shadow: 5px 5px 30px rgba(188, 208, 229, .35)
             transition: all .3s
             padding-bottom: 15px
             margin-bottom: 10px
+            justify-content: center
 
             &:focus 
                 outline: 2px solid #BCD0E5
-            
-            &:hover
-                box-shadow: 5px 5px 30px rgba(188, 208, 229, .45)
+        
+        &-content
+            max-width: 348px
+            margin: 0 15px
         
         &-img
             transition: all .25s
@@ -53,10 +51,6 @@
 
             &:hover .marketing__slider-img
                 transform: scale(1.2)
-            
-            &:hover .marketing__slider-title
-                color: $color_orange
-                background: #000
             
             &:focus 
                 outline: none
@@ -73,3 +67,6 @@
 
             &:hover
                 border-bottom: 2px solid #BCD0E5
+
+.slick-initialized .slick-slide
+    display: flex

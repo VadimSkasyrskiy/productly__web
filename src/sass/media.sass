@@ -1,0 +1,192 @@
+@media screen and ( max-width:  1020px)
+    .main-footer__list
+        margin-left: 0
+        margin-right: 35px
+    .main-footer__nav
+        justify-content: flex-start
+        .menu
+            flex-grow: 1
+    .main-footer__forms
+        margin-left: 0
+
+@media screen and ( max-width:  910px)
+    .main-header
+        &__button-menu
+            display: block
+            position: relative
+            z-index: 999
+    
+        &__navigation
+            text-align: center
+            background: #fff
+            padding: 20px 0
+            display: block
+            position: absolute
+            top: 0
+            right: 0
+            border: 1px solid $color_orange
+            opacity: 0
+            visibility: hidden
+
+        &--active
+            opacity: 1
+            visibility: visible
+
+        &__buttons
+            margin: 0
+            padding: 0 15px
+        
+        .menu
+            margin-top: 55px
+            &__list
+                display: block
+                margin-bottom: 30px
+
+            &__item
+                margin-right: 0
+                transition: background .3s
+
+                &:hover
+                    background: #567592
+                    color: #fff
+
+            &__link
+                display: inline-block
+                padding: 20px 0
+                width: 100%
+                color: inherit
+                transition: color .25s
+
+        .main-header__button-menu--active
+            border-top: none
+            border-bottom: none
+            width: 25px
+
+            &::after
+                background: $color_orange
+                margin-top: 10px
+
+            &::before
+                display: block
+                top: 0
+                height: 25px
+                background: $color_orange
+    .offer
+        &__row
+            flex-wrap: wrap
+            justify-content: center
+            padding-top: 80px
+
+        &__text
+            max-width: 100%
+            margin-bottom: 75px
+
+        &__buttons
+            text-align: center
+
+    .services__row
+        flex-wrap: wrap
+        justify-content: center
+        margin-bottom: 50px
+    
+    .services__text
+        max-width: 100%
+        margin: 0
+        margin-bottom: 15px
+    
+    .expert
+        background-position: center
+        margin-bottom: 100px
+
+        &__offer
+            margin-top: 50px
+
+        &__inner
+            padding-bottom: 0
+            padding-top: 150px
+
+        &__item
+            position: static
+            margin: 25px 0
+
+            &--left
+                flex-direction: row
+            
+                .expert__item-message
+                    margin-left: -38px
+                    &::after
+                        left: 30px
+
+                    &::before
+                        left: 20px
+
+    .services__row--reverse .services__text
+        margin-left: 0
+
+@media screen and ( max-width:  750px)
+    .main-footer
+        margin: 40px 0
+
+        .menu__item, .menu__list
+            margin-right: 0
+        
+        .menu__link
+            display: block
+        
+        &__inner
+            text-align: center
+            padding-top: 60px
+
+    .main-footer__nav .menu
+        margin: 25px 0
+
+    .main-footer__forms
+        margin-top: 65px
+        width: 100%
+
+@media screen and ( max-width:  530px)
+    .main-footer__nav
+        display: block
+        margin-top: 65px
+    .offer__btn
+        display: block
+        margin: 0 auto 55px auto
+    
+    .feature__items
+        display: block
+    
+    .feature__item
+        max-width: 100%
+        text-align: center
+        margin-bottom: 75px
+    
+    .feature__item-icon
+        margin: 0 auto 30px
+    
+    .expert__item
+        display: block
+        text-align: center
+
+        &-icon
+            margin-top: 0
+            display: block
+            margin: 0 auto 35px
+
+        &-message
+            margin: 0 auto
+
+            &:before, &:after
+                display: none
+        &--left
+            .expert__item-message
+                margin-right: 0
+                margin-left: 0
+
+    .expert__item:first-child .expert__item-message
+        margin-left: 0
+    
+    .expert
+        margin-top: 70px
+
+        &__inner
+            padding-top: 70px

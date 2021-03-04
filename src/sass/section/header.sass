@@ -1,6 +1,6 @@
 .main-header
+    padding-top: 35px;
     &__row
-        height: 78px
         display: flex
         flex-wrap: wrap
         justify-content: space-between
@@ -19,3 +19,31 @@
         
         &:last-child
             margin-right: 0
+
+    &__button-menu
+        user-select: none
+        box-sizing: border-box
+        display: none
+        cursor: pointer
+        width: 40px
+        height: 26px
+        border-bottom: 4px solid $color_orange
+        border-top: 4px solid $color_orange
+        position: relative
+
+        &::after
+            content: ""
+            height: 4px
+            background: $color_orange
+            display: block
+            margin-top: 7px
+        
+        &::before
+            content: ""
+            height: 40px
+            width: 4px
+            background: $color_orange
+            display: none
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
